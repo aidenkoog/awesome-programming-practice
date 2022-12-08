@@ -7,13 +7,25 @@ It is written based on Typescript.
 
 - Language: Javascript + Typescript
 - Structure Summary
-    - ✨ JSX Elements
-    - ✨ Under Constuction
+    - ✨ assets
+    - ✨ config
+    - ✨ data
+    - ✨ domain
+    - ✨ infrastructure
+    - ✨ presentation
+    - ✨ utils
+
+## Tech Stack
+
+- React Native
+- Axios For HTTP communication. (Client library)
+- Redux (State Management Library)
+- Redux Saga as Redux Middleware to handle asynchronous events.
 
 ## Release Note
 
-- 2022/12/08 : Initialized Typescript based project.
-- 2022/12/08 : Uploaded simple components / Add clean architecture folder hierarchy.
+- 2022/12/08 : (1st) Initialized Typescript based project.
+- 2022/12/08 : (2nd) Uploaded simple components / Add clean architecture folder hierarchy.
 
 
 ## How To Setup Environment
