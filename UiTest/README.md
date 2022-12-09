@@ -26,6 +26,7 @@ It is written based on Typescript.
 
 - 2022/12/08 : (1st) Initialized Typescript based project.
 - 2022/12/08 : (2nd) Uploaded simple components / Add clean architecture folder hierarchy.
+- 2022/12/09 : Renewed structure of app source based on movie app style.
 
 
 ## How To Setup Environment
