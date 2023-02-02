@@ -8,6 +8,7 @@
 
 - 데이터 타입을 자동으로 유추
 - 동적 해석 프로그래밍 언어
+- 동적 작업을 위해 필요
 - 브라우저 내에 자바스크립트 엔진 존재 -> 자바스크립트 실행 가능
 - 자바스크립트는 로컬 파일 시스템은 접근 불가
 - 구글 자바스크립트 엔진 V8
@@ -27,3 +28,12 @@
 - VSCODE: Preferences - Settings - (.vscode) - ex. prettier (코드 포맷팅 수정)
 - 기본 세팅: 자동 세미콜론 + 탭 2칸 + 싱글 따옴표 (Quote)
 - 확장 프로그램 영향 줄이기 위해서는 개발 시 시크릿 모드 권장
+- script src="assets/app.js"
+- 페이지 로드 완료된 이 후 무엇인가를 처리하려면?
+- Case Sensitive / Camel Case Format
+- Snake Case is NOT recommended.
+- + - * / % **
+- 백틱 문자 ($ 사용 가능, 코틀린과 유사), 쌍따옴표 내 싱글 따옴표
+- 템플릿 리터럴
+
+ 
