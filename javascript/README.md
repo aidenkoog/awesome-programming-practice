@@ -1,9 +1,11 @@
 # Javascript
+
 ## Study
 
 [![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://github.com/aidenkoog)
 
 ## Javascript
+
 - 데이터 타입을 자동으로 유추
 - 동적 해석 프로그래밍 언어
 - 브라우저 내에 자바스크립트 엔진 존재 -> 자바스크립트 실행 가능
@@ -22,8 +24,6 @@
 - 자바스크립트 vs 자바 (브라우저에서 직접 지원 X)
 - LiveScript / JavaScript / ECMAScript / ActionScript / jScript
 - 구글 크롬 (개발자 도구) + 비주얼 스튜디오 코드
-
-
-
-
-
+- VSCODE: Preferences - Settings - (.vscode) - ex. prettier (코드 포맷팅 수정)
+- 기본 세팅: 자동 세미콜론 + 탭 2칸 + 싱글 따옴표 (Quote)
+- 확장 프로그램 영향 줄이기 위해서는 개발 시 시크릿 모드 권장
