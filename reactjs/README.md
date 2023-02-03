@@ -104,6 +104,13 @@
     - props 사용한 동적 스타일 구성 ($와 {}활용)
     - 미디어 쿼리 @media
     - CSS 모듈: Button.module.css 등
+  - Users -> src -> 원본소스 확인 -> 브레이크 포인트 설정
+  - DevTools (Chrome Extension)
+  - label 태그: htmlFor
+  - form 태그 onSubmit (기본 동작은 누르면 웹페이지가 갱신됨)
+  - import classes from './Xxx.module.css'
+  - 자바스크립트 파일이 아닌 경우에는 Import 시 확장자 작성 필요
+  - Fallback 처리: type={props.type || 'button'} <- 전달된 타입이 없는 경우에 대한 Fallback 처리
 - 자바스크립트
   - 데이터 타입을 자동으로 유추
   - 동적 해석 프로그래밍 언어
