@@ -138,6 +138,6 @@
   - 페이지 로드 완료된 이 후 무엇인가를 처리하려면?
   - Case Sensitive / Camel Case Format
   - Snake Case is NOT recommended.
-  - + - * / % **
+  - "+ - * / % **"
   - 백틱 문자 ($ 사용 가능, 코틀린과 유사), 쌍따옴표 내 싱글 따옴표
   - 템플릿 리터럴 
