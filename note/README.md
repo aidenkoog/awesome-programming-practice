@@ -141,3 +141,28 @@
   - "+ - * / % **"
   - 백틱 문자 ($ 사용 가능, 코틀린과 유사), 쌍따옴표 내 싱글 따옴표
   - 템플릿 리터럴 
+- 타입 스크립트
+  - 프로그래밍 언어 / 도구
+  - 브라우저는 타입스크립트를 실행할 수 없다.
+  - 타입 추가 / 브라우저 런타임에서 에러 발생 전 코드의 에러를 미리 식별 가능, 에러가 적은 코드 작성 가능
+  - 숫자 연산, 문자열 연결 예제가 대표적인 자바스크립트, 타입스크립트 차이점 예제
+  - +number1 + +number2 / typeof === "number"
+  - 설치 : npm install -g typescript
+  - 타입스크립트 컴파일 방법: tsc xxx.ts -> xxx.js 파일 생성됨
+  - 데코레이터, 제네릭, 클래스, 인터페이스
+  - 네임 스페이스, 모듈
+  - 웹팩: 프론트엔드 웹 개발 시 사용하는 구축 도구
+  - VsCode Plugins: Prettier (format document - shortcut), EsLint, Path Intellisense, Material Icon, TSLint
+  - lite-server (localhost:3000)
+  - node_modules: 타사 패키지와 종속성을 모두 저장하는 폴더
+  - Extra Sanity Check
+  - 정적 타입, 런타임 중에 변수와 매개변수가 변하지 않음.
+  - 타입 추론 (자바스크립트, 타입스크립트)
+  - let result = "Result.." / result = 0 (에러) <--- 문자열로 추론
+  - 클래스: const person: { name: string; age: number } = { name='', age: 30}
+  - any 타입
+  - Tuple 타입, Fixed length array.
+  - Tuple 타입, Push 기능 관련 이슈
+  - Enum 타입 - Enum 왜 사용하는지에 대한 근본적인 질문
+  - 문자열보다 숫자를 사용하면 메모리 점유와 코드 양 줄일 수 있음.
+  - enum CustomEnum { TEST1, TEST2, TEST3 } / CustomEnum.TEST1
