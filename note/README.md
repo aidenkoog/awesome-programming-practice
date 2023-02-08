@@ -166,6 +166,12 @@
   - Enum 타입 - Enum 왜 사용하는지에 대한 근본적인 질문
   - 문자열보다 숫자를 사용하면 메모리 점유와 코드 양 줄일 수 있음.
   - enum CustomEnum { TEST1, TEST2, TEST3 } / CustomEnum.TEST1
+  - 유니언 타입 (예. number | string -> if (typeof input1 === ''number))
+    - 런타임 체크 필요한 경우 발생
+  - result: 'as-number' | 'as-text' 리터럴 타입
+  - 커스텀 유니언 타입: type 으로 정의. 예. type customType = number | string
+    - 불필요한 반복 지양, 타입 중심 관리 가능
+  - undefined
 - 공통
   - 테스트 TDD
   - Mockito
