@@ -1,7 +1,7 @@
-# How To Make App
+# Coding Study Note.
 
-## Let's stydy React.js, Vue.js, Angular.js, React-Native, Flutter, Android, iOS, Xamarin, Python and etc.
-## Let's implement the functions in the currently commercialized app.
+## Let's stydy React.js, Vue.js, Angular.js, React-Native, Flutter, Android, iOS, Xamarin, Python and Everything!.
+## Let's study the concept of a variety of languages, framework and library and, implement the functions in the currently commercialized app.
 
 [![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://github.com/aidenkoog)
 
