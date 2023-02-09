@@ -151,7 +151,7 @@
   - 타입스크립트 컴파일 방법: tsc xxx.ts -> xxx.js 파일 생성됨
   - 데코레이터, 제네릭, 클래스, 인터페이스
   - 네임 스페이스, 모듈
-  - 웹팩: 프론트엔드 웹 개발 시 사용하는 구축 도구
+  - 웹팩 (Webpack): 프론트엔드 웹 개발 시 사용하는 구축 도구
   - VsCode Plugins: Prettier (format document - shortcut), EsLint, Path Intellisense, Material Icon, TSLint
   - lite-server (localhost:3000)
   - node_modules: 타사 패키지와 종속성을 모두 저장하는 폴더
@@ -180,6 +180,7 @@
     - noEmit: true (산출물 만들지 않기), noEmitOnError (에러 발생 시에는 .js 파일 생성하지 않음)
     - strict, strictNullCheck, Dom의 버튼 객체를 예로 듬. 또는 if (button) xxx
     - strictBindCallApply, ex. clickHandler.bind(null)
+    - Debugger for chrome 플러그인 (VsCode) - sourceMap 활성화 필요, launche.json
 - 공통
   - 테스트 TDD
   - Mockito
@@ -198,16 +199,16 @@
   - 정부과제 - 연구내용/노트
   - TF (Team Fortress)
   - 경력 정리
-    - 나에 대한 간략 개요 / 사진 / 이메일 / 주 블로그
-    - 경험: 회사이름 (회사링크), 기간, 대표 포지션, 회사 대표 서비스, 경험 내용 나열
-    - 역량: 내가 기여한 주요 역할 및 정리한 링크 / 상세 내용 정리 (경험과 역량의 차이점은 잘 모르겠다.)
-    - 업무 시 사용했었던 기술 (언어, 프레임워크, 라이브러리, 플랫폼)
-    - 개인 블로그 / 깃허브 (프로젝트 진행의 이유)
-    - 포트폴리오 (프로젝트 + 기술 + 어려움 극복 내용 + 기술 사용 이유)
-    - 교육 사이트 수료 내용 작성 -> 정리한 블로그 링크 공유 / 공부 이유 작성
-    - 세미나 및 개인 정리 자료들 (세미나의 이유)
-    - 관심있는 도서 + 강의 + 기사 등 정리 (관심있는 이유)
-    - 협업의 갈등 상황 예시들 + 처리 방법들 + 고민했었던 내용
+    - 나는 무슨 개발자인가? 주 도메인과 서브 도메인은 무엇인가?
+    - 경험: 회사, 기간, 주력 포지션, 대표 구현 서비스, 경험 내용
+    - 역량: 기여 주요 역할 / 상세한 기여 내용
+    - 업무 진행 사용 기술 (언어, 프레임워크, 라이브러리, 플랫폼)
+    - Confluence, Blog, Github 활용
+    - 업무 프로젝트 (프로젝트 진행 이유 / 요구사항 + 기술 + 애로사항 극복 내용 + 유지보수 내용)
+    - 교육 사이트 활용 → 교육 이후 Confluence / Blog에 정리하고 세미나 자료를 만드는 것이 효과적.
+    - 작성한 문서의 카테고리화
+    - 도서 / 기사 글
+    - 협업 중 일어난 상황 정리 / 학습 중 발생한 어려움 / 이슈 처리 중 어려움
   - SaaS (Software as a Service, Saas)
   - Jenkins / SpringBatch
   - 기술 블로그
