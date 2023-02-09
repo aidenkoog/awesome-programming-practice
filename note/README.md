@@ -141,6 +141,9 @@
   - "+ - * / % **"
   - 백틱 문자 ($ 사용 가능, 코틀린과 유사), 쌍따옴표 내 싱글 따옴표
   - 템플릿 리터럴 
+  - Arrow Function: 코드 양 줄일 수 있고 다양한 형태로 작성 가능
+    - const add = (a, b) => a + b;
+  - 기본값 함수 매개변수 (const add = (a, b = 2) => a + b;)
 - 타입 스크립트
   - 프로그래밍 언어 / 도구
   - 브라우저는 타입스크립트를 실행할 수 없다.
@@ -181,6 +184,14 @@
     - strict, strictNullCheck, Dom의 버튼 객체를 예로 듬. 또는 if (button) xxx
     - strictBindCallApply, ex. clickHandler.bind(null)
     - Debugger for chrome 플러그인 (VsCode) - sourceMap 활성화 필요, launche.json
+  - let 과 var 의 변수 유효 범위 ({} 내 var 변수는 {} 바깥에서 참조가능)
+  - Arrow Function:
+    - const printOutput: (a: number | string) => void = output => console.log(output);
+    - if (button) button.addEventListener('click', event => console.log(event));
+  - 스프레드 연산자
+    - 배열의 푸쉬 동작 원리
+    - ex. xxx.push(...bases)
+    - ex. const person = { name: "xxx", age: 33 }; const copied = { ...person };
 - 공통
   - 테스트 TDD
   - Mockito
