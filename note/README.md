@@ -171,7 +171,15 @@
   - result: 'as-number' | 'as-text' 리터럴 타입
   - 커스텀 유니언 타입: type 으로 정의. 예. type customType = number | string
     - 불필요한 반복 지양, 타입 중심 관리 가능
-  - undefined
+  - undefined, unknown
+  - 컴파일
+    - 소스 맵 (크롬 - 개발자도구) : 브라우저와 개발자 도구 간의 다리 역할 sourceMap: true (tsconfig.json)
+    - rootDir / outDir (ex. outDir: ./dist, rootDir: ./src)
+    - dist
+    - remoteComments: true (주석 제거)
+    - noEmit: true (산출물 만들지 않기), noEmitOnError (에러 발생 시에는 .js 파일 생성하지 않음)
+    - strict, strictNullCheck, Dom의 버튼 객체를 예로 듬. 또는 if (button) xxx
+    - strictBindCallApply, ex. clickHandler.bind(null)
 - 공통
   - 테스트 TDD
   - Mockito
