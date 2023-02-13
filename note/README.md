@@ -366,3 +366,58 @@
   - 태그 중첩하면서 부모와 자식 관계 형성
   - Shift + Tab: Outdent / Tab: Indent
   - 하위(후손)요소 <-> 상위(조상)요소
+웹페이지 구상 순서 (만약 자기 자신을 설명하는 웹페이지를 만들 계획이라면?)
+  - 기획, Design -> Git, GitHub -> HEAD -> HTML -> CSS -> Styling -> Javascript -> Publish
+  - Design Requirment
+    - Single page.
+    - 최대한 사용자 편의성을 증가 (최소한의 클릭 / 스텝)
+    - 전문 지식, 개발
+    - Skill 스택 (기술, 언어, 툴)
+    - 카테고리화, 입상 경력
+    - Contact, LinkedIn, Github 등
+  - Contents 구성
+    - Author 소개
+    - 주요 스택 (Front / BackEnd / Mobile)
+      - Web basic HTML + CSS + JS
+      - React / Vue
+    - Career
+      - Company, Scholl, Period 등
+    - Skill
+      - Language
+      - Tool
+      - Etc (Other Tools (Not related programming tool, ex. Photoshop etc) / Pure science 등)
+    - Project
+      - 중요 Project 먼저 기술 / 무엇인지? / 주요 기능 / Github (README <-- 주요기능 스크린샷)
+      - Skill 정리 / Study
+    - 장점, Skill, Link, 입상 경력
+    - Contact: E-mail / Github / LinkedIn / 등등
+  - Wireframing
+    - 전반적인 레이아웃 구상
+  - GUI 제작
+    - Font Awesome / Color picker 로 색상코드 얻는다.
+      - svg: fill 부분에 currentColor 부분에 색상 코드 삽입 가능.
+    - canva.com (Image design) -> png download -> remove.bg etc
+- Web 3.0
+  - Read Only (ex. wikipedia)
+  - 게시판 (Web 1.0) ~ 2005, 제작자의 컨셉만을 따라야 하는 방식
+  - 닷컴버블 사태 (IT Company)
+    - 2002, 소셜 네트워크 발전의 시작, 사용자의 능동적인 행동 가능 (Web 2.0, 2005 ~)
+    - Web 2.0: Read / Write, 소셜미디어 / 핀테크 / 클라우드 (개인 정보 노출) / 고유의 이메일 계정 필요
+  - 주요 키워드 : 탈중앙화, 개빈 우드 (이더리움, 폴카닷) - 서비스의 운명은 기업에 달려있다.
+    - 서비스 제공자가 없는 서비스가 될 것.
+    - 모든 정보가 NFT화 되어 블록체인에 기록. 소유권이 100% 유저에게 있음.
+    - 개인의 정보를 중앙화된 기업이 소유하지 못할 것
+    - 지갑을 통해 단일 로그인 방식으로 다양한 플랫폼에서 이용.
+    - 브라우저에서 금융활동 가능할 것.
+    - Web 2.0 중앙화 시스템 장점: 기업이 주는 신뢰, 탈중앙화의 신뢰는? 블록체인 내 프로그램 코드 -> Certik, Hacken, Slomist, 수호.io, 해치랩스 등의 업체에서 코드 검증
+    - Web 3.0 소개 용어들
+      - 블록체인, DAO (탈중앙화 자율조직) - 서비스 이용자 사이에 제안 / 투표로 의자 및 정책 결정이 이루어짐.
+      - 지갑: 신분, 익명성 보장 (Distributed Ledger Technology), Metamask
+      - De-Fi (탈중앙화 금융): 웹 상에서 금융 서비스 실현 (Decentralized Finance)
+      - dApp
+      - Smart Contract
+      - ICO (Initial Coin Offering)
+      - IPFS
+      - AI, 자연어, Symentic Web, Metabus, Token (Coin)
+      - OnChain 통신 (Web3.js, ether.js, caver.js)
+  
