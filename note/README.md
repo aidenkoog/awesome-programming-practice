@@ -304,4 +304,8 @@
   - CMD + F: 찾기
   - OPT + UP/Down: 라인 이동
   - OPT + Shift + Up/Down: 라인 복사
-  - 권장 탭 공백 개수: 2
+  - TAB, 권장 탭 공백 개수: 2
+  - Shift + TAB : 내어쓰기 (아웃덴트)
+    - Indent Using Spaces 메뉴에서 설정 가능
+  - Beautify 기능도 고려.
+  - 탭 이동: CMD + Shift + [ / ]
