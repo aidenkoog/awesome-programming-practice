@@ -347,3 +347,22 @@
 - HTML, CSS 는 크롬 인스펙터 통해 비교적 쉽게 분석 가능하나 자바스크립트는 보통 비즈니스 로직이 들어가기 때문에 난독화 과정을 거치므로 분석하기에는 어려움이 있음.
 - :hov 내 :hover를 체크해보면 마우스 올렸을 때의 효과를 볼 수 있음.
 - 실제로 적용된 CSS 내용만을 보려면 Computed 탭을 참고.
+- 프로젝트 구성 방법
+  - codepen.io (HTML 란은 body 태그 안을 의미)
+- HTML / CSS / JS 전처리기 ( Preprocessor )
+- 브라우져 기본 설정
+  - 크롬에서 body 에 기본 8px이 들어감.
+  - 다른 브라우저로 가면 유사하지만 다른 값들을 가짐.
+  - 각각의 벤더사들, 애플, 구글, 크로스 브라우징
+  - 브라우저에서 기본적으로 제공하는 CSS 스타일을 기본적으로 초기화하고 작업을 시작하는 것이 권장됨. (reset.css cdn)
+    - "https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" <-- stylesheet 관계, link 태그 작성 --> 브라우저에서 기본적으로 제공하는 마진 삭제됨.
+    - Codepen 에서 적용하려면 CSS Base 를 리셋으로 설정
+- div.test --> test class를 사용하는 div 코드 자동완성. (자동완성 --> Emmet 문법의 도움)
+- h: 200 --> height: 200px
+- bc: orange --> background-color: orange
+- div>ul>li*4{$} <-- CSS 선택자와 관련 있는 내용.
+- HTML
+  - 열린/시작 태그 - 닫힌/종료 태그
+  - 태그 중첩하면서 부모와 자식 관계 형성
+  - Shift + Tab: Outdent / Tab: Indent
+  - 하위(후손)요소 <-> 상위(조상)요소
