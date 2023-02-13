@@ -309,3 +309,33 @@
     - Indent Using Spaces 메뉴에서 설정 가능
   - Beautify 기능도 고려.
   - 탭 이동: CMD + Shift + [ / ]
+  - CMD + \: 분할 창 모드
+- !DOCTYPE html <-- 문서의 HTML 버전을 지정
+  - DTD, Document Type Definition 은 마크업 언어에서 문서 형식을 정의, 웹 브라우저가 어떤 HTML 버전의 해석 방식으로 페이지를 이해하면 되는 지를 알려주는 용도. (개발자가 브라우저에게 알려주는 것)
+  - HTML1 ~ 4, XHTML, HTML5 (표준)
+  - ex. !DOCTYPE html PUBLIC .. <-- 표준이 아닌 과거 버전
+  - html <-- 문서의 전체 범위를 지칭하는 태그
+  - head <-- 문서의 정보를 나타내는 범위, 웹 브라우저가 해석해야 하는 정보 (제목, 설명, 파일 위치, CSS, 비가시적인 정보를 작성하는 범위)
+  - body <-- 문서의 구조를 나타내는 범위, 사용자의 화면을 통해 보여지는 로고, 헤더, 푸터, 내비게이션, 메뉴, 버튼, 이미지같은 웹페이지의 보여지는 구조를 작성하는 범위.
+  - lang: 지정할 문서의 언어(ISO 639-1)를 명시하는 HTML 속성. (ex. lang="ko" 로 하면 구글 번역기 동작 X)
+- head 안에 추가 가능한 내용
+  - CSS 파일 추가: link <-- 대부분 CSS 파일을 가져와 연결할 때 사용, rel="stylesheet" / "icon"
+    - rel: 가져올 문서와의 관계, relationship
+    - href: 가져올 문서의 경로, hyper text reference
+    - 참고: 보통 웹페이지 Favicon 적용할 때는 이름을 favicon이라고 지정하는 것이 관례, favicon.ico / favicon.png 파일이 주로 사용된다.
+  - JS 파일 추가: script (html 문서 안에서 직접적으로 Javascript 작성도 가능)
+  - CSS 스타일 직접 적용: style (html 문서 안에서 직접적으로 작성하는 경우)
+  - 문서 제목 정의: title <-- 웹 브라우저의 탭에 표시됨.
+  - meta: html 문서(웹페이지)의 제작자, 내용, 키워드 같은 여러 정보를 검색엔진이나 브라우저에게 제공
+    - name: 정보의 종류
+    - content: 정보의 값
+  - (참고) viewport: 웹페이지가 출력되는 영역, 모바일에만 해당하는 속성
+  - charset, 문자 인코딩 방식: 브라우저에서는 주로 UTF-8 사용이 권장 (EUC-KR --> UTF-8)
+- img: 이미지 태그, alt (alternative) 는 이미지가 출력되지 못하는 경우 대신 출력할 텍스트를 지정, 대체 텍스트, 이미지 경로 및 네트워크 상태 불안정 등으로 인해 이미지 출력이 어려운 경우 이미지 대신 출력되는 글자. (필수 속성)
+- 사이트 접속하여 개발자 도구 연 다음 Element 탭 왼쪽에 있는 선택 아이콘을 눌러 이미지 경로를 파악한다.
+- 상대경로 / 절대경로
+- http://127.0.0.1:5500/index.html <-- 라이브 서버 5500포트 (== http://localhost:5500)
+  - localhost: 우리의 컴퓨터 환경, 루트 경로에 있는 index.html 파일을 연다.
+- . 이 있는 것과 없는 것 (예. ./images/xxx, images/xxx)
+- 루트(/) <-- 최상위 경로, 프로젝트의 최상위 루트 경로
+- 다른 사이트로부터 이미지를 가져오는 것: 절대 경로의 개념
