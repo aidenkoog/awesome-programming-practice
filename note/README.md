@@ -302,3 +302,6 @@
   - CMD + F: 찾기
   - CMD + OPT + F: 찾기 + 바꾸기
   - CMD + F: 찾기
+  - OPT + UP/Down: 라인 이동
+  - OPT + Shift + Up/Down: 라인 복사
+  - 권장 탭 공백 개수: 2
