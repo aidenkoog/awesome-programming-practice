@@ -283,4 +283,22 @@
   - 네트워크 예외처리 방법
   - 헤더, 바디에 대한 내용
   - 장애상황 대처 (화면이 안뜰때 확인할 수 있는 포인트, JS 다운로드가 느릴때 확인 포인트)
-
+- VsCode
+  - Shift + CMD + P : All Command (모든 명령 표시)
+  - CMD + O (File - Open)
+  - Purple Status Bar --> Project Init --> Blue Status Bar
+  - ! --> tab or enter --> html standard code generation.
+  - Korean Plugin (Option)
+  - OPT + Shift + F
+  - CMD + K -> F (원하는 영역만 코드 정리)
+  - Auto Rename Tag Plugin (태그 이름 자동 수정 플러그인)
+  - 탭 우측에 흰색 아이콘은 현재 수정 후 저장이 되지 않은 상태임을 뜻함.
+  - CMD + OPT + S : 모두 저장
+  - Live Server Plugin: HTML 파일에서 'Open With Live Server' 로 HTML 내용 확인 가능
+    - 라이브 서버는 개발을 위해 임시로 로컬 서버를 오픈하는 것. 나중에 실제 제품은 실제 호스팅 즉, 사용자들이 접근 가능한 서버에 업로드해야 함.
+  - CMD + B: 사이드 바 열고 닫기
+  - CMD + P: 검색한 이름에 해당하는 파일 보기
+  - CMD + W: 탭 닫기
+  - CMD + F: 찾기
+  - CMD + OPT + F: 찾기 + 바꾸기
+  - CMD + F: 찾기
