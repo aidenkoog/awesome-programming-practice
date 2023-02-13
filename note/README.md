@@ -1,8 +1,5 @@
 # Coding Study Note.
 
-## Let's stydy React.js, Vue.js, Angular.js, React-Native, Flutter, Android, iOS, Xamarin, Python and Everything!.
-### Let's study the concept of a variety of languages, framework and library and, implement the functions in the currently commercialized app.
-
 [![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://github.com/aidenkoog)
 
 ## Study Keyword.
@@ -339,3 +336,4 @@
 - . 이 있는 것과 없는 것 (예. ./images/xxx, images/xxx)
 - 루트(/) <-- 최상위 경로, 프로젝트의 최상위 루트 경로
 - 다른 사이트로부터 이미지를 가져오는 것: 절대 경로의 개념
+- /images: (http://localhost:5500)/images 와 동일 개념
