@@ -445,5 +445,7 @@
   - Row + Column Set
   - tr: 행 (Table Row), td: 열 (Table Data)
   - HTML 로는 구조만 나타내는 것 (테이블 구조를 만든다에 초점)
+- localStorage / sessionStorage 차이점.
+- Route, Switch, Redirect
 
   
