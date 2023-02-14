@@ -420,4 +420,30 @@
       - IPFS
       - AI, 자연어, Symentic Web, Metabus, Token (Coin)
       - OnChain 통신 (Web3.js, ether.js, caver.js)
+- Web 3.0 => 기술 X, 미래 인터넷 세계 관련한 운동? / 방향 / 지향점 / 생활양식 / 규칙으로 이해
+- 닫히지 않은 태그, 빈 태그, Empty Tag
+- XHTML, XML (Strict)
+- 열린 태그, Attribute, Value, 필수 Attribute (img 태그의 src, alt 엑박 속성 등)
+- 글자와 상자: 요소가 화면에 출력되는 특성, 글자 개념, 상자 개념 2가지, 인라인 vs 블록 요소
+- 인라인 요소: span, 콘텐츠 영역 설정 용도, 수평으로 쌓이는 특성, 줄바꿈 = 띄어쓰기로 해석
+  - span, img, a(anchor, 닻, 링크를 건다, 고정시킨다의 느낌) - href 링크 URL 설정, target="_blank" <-- 새탭에서 링크 이동 (브라우저 탭 위치), br (Break), label
+  - 포함한 컨텐츠 크기만큼 자동으로 줄어듬. (가로, 세로 길이)
+  - 글자 요소는 가로, 세로 사이즈 지정 불가, padding, margin은 세로 지정 불가
+  - 글자 요소 안에 상자 (블록) 요소 포함 불가
+- 블록 요소: div (division), 상자의 개념
+  - div, h1~6(heading) - 헤더, p(paragraph) - 문장, ul(Unordered list), li(List item), ol(ordered list)
+  - ul, li는 세트
+  - 요소들이 수직으로 쌓임.
+  - 부모 요소의 크기만큼 자동으로 늘어남.(가로) / 세로 넓이는 컨텐츠 크기 만큼.
+  - 가로, 세로 사이즈 지정 가능 (상자 개념이므로)
+  - 블록, 글자 요소 포함 가능
+- 인라인 블록 (inline-block) 요소
+  - input: 수평으로 쌓이는 특성, 가로, 세로 크기 지정도 가능
+    - disabled (인풋창 비활성화), placeholder, value, checked (미리 체크), radio (선택 1개) - name 속성으로 그룹화 가능
+    - label 안에 포함 가능 (라벨링)
+- 테이블 요소, Table-Cell (블록 요소, 세부적인 블록 요소라 보면 됨.)
+  - Row + Column Set
+  - tr: 행 (Table Row), td: 열 (Table Data)
+  - HTML 로는 구조만 나타내는 것 (테이블 구조를 만든다에 초점)
+
   
