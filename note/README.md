@@ -447,5 +447,33 @@
   - HTML 로는 구조만 나타내는 것 (테이블 구조를 만든다에 초점)
 - localStorage / sessionStorage 차이점.
 - Route, Switch, Redirect
+- Git / GitHub
+  - Google Docs - Version history
+  - 소스 버전 관리
+  - Local 관리 위험성 극복 -> Github, Bitbucket 서버 내 저장
+    - Distributed Version Control
+  - Branch 
+- VsCode
+  - Settings - Json 검색 - Edit in settings.json
+  - Live Server Install
+  - 북마크 (HEAD 내 title 내용이 표시)
+  - defer: 페이지가 모두 로드된 후에 해당 외부 스크립트가 실행됨을 명시. (명시하지 않으면 기본 false, 명시하면 true)
+    - async 속성만 명시: 브라우저가 페이지를 파싱하는 동안에도 스크립트가 실행
+    - async 속성 명시 X, defer만 명시: 브라우저가 페이지의 파싱을 모두 끝내면 스크립트가 실행.
+    - async 속성 + defer 속성 모두 명시: 브라우저가 페이지를 파싱하기 전에 스크립트를 가져와 바로 실행.
+- Custom Property
+  - --background-color: blue; <-- 이런 식으로 사용가능
+  - var(--background-color)
+  - https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties 
+- Data Attribute
+  - div[data-display-name='koo'] { color: red }
+  - DOMStringMap 에서 보면 data- prefix는 제거되어 있음. (Snake -> CamelCase)
+  - 보안 상관없는 데이터만 정의하여 사용
+  - const temp = document.querySelector('div[data-display-name="koo"]');
+    - console.log(temp.dataset) / console.log(temp.dataset.displayName) / console.log(temp.dataset.index)
+- BEM
+  - Block Element Modifier
+    - .card <-> .card--black
+
 
   
