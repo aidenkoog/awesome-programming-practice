@@ -135,9 +135,9 @@
   - 페이지 로드 완료된 이 후 무엇인가를 처리하려면?
   - Case Sensitive / Camel Case Format
   - Snake Case is NOT recommended.
-  - "+ - * / % **"
+  - "+ - \* / % \*\*"
   - 백틱 문자 ($ 사용 가능, 코틀린과 유사), 쌍따옴표 내 싱글 따옴표
-  - 템플릿 리터럴 
+  - 템플릿 리터럴
   - Arrow Function: 코드 양 줄일 수 있고 다양한 형태로 작성 가능
     - const add = (a, b) => a + b;
   - 기본값 함수 매개변수 (const add = (a, b = 2) => a + b;)
@@ -195,9 +195,9 @@
     - (참고) 비즈니스 로직: 웹사이트가 동작하는 데 필요한 핵심 데이터 처리를 수행하는 알고리즘.
     - 풀스택 개발: GUI 프론트엔드부터 데이터베이스 백엔드 등 모든 소프트웨어 스택을 개발하는 것.
     - HTML: 페이지의 제목, 문단, 표, 이미지, 동영상 등 웹의 구조를 담당 (핵심: 구조 구성)
-    - HTML (기획자), CSS (디자이너), JS (개발자) 
+    - HTML (기획자), CSS (디자이너), JS (개발자)
     - CSS (Cascading Style Sheet): 실제 화면에 표시되는 방법 (색상, 크기, 폰트, 레이아웃 등)을 지정해 콘텐츠를 꾸며주는 시각적인 표현(정적)을 담당 (핵심: 스타일)
-    - JS: 콘텐츠를 바꾸고 움직이는 등 페이지를 동작시키는 동적 처리 담당. (핵심: 동적 처리) 
+    - JS: 콘텐츠를 바꾸고 움직이는 등 페이지를 동작시키는 동적 처리 담당. (핵심: 동적 처리)
       - 제작된 웹 사이트(웹 어플리케이션, 웹앱)를 제품(Product)이라고 부르기도 한다.
     - HTML + CSS: 레이아웃을 중심으로 사고 / JS: 데이터를 중심으로 사고
   - 테스트 TDD
@@ -205,7 +205,7 @@
   - 통신 프로토콜, 통신 규약은 컴퓨터나 원거리 통신 장비 사이에서 메세지를 주고 받는 양식 / 규칙의 체계를 의미 (대표적: HTTP, HTTPS, FTP, SSL)
   - 웹앱 동작 원리
     - 사용자 컴퓨터(브라우저) --> 페이지 주소 작성 --> (Request) --> 서버 --> (Response HTML) --> 사용자 브라우저 --> 추가 요청 --> 서버 --> 추가 응답 (CSS, JS, JPG..)
-      - 필요 시 추가 요청이 이루어지고 해당 정보들을 응답받는다. 
+      - 필요 시 추가 요청이 이루어지고 해당 정보들을 응답받는다.
   - 웹 표준, 브라우저
     - 웹 표준: 웹에서 사용되는 표준 기술 / 규칙, W3C의 죠준화 제정 단계의 권고안(REC)에 해당하는 기술
       - 표준화 제정 단계 4가지
@@ -224,14 +224,14 @@
         - PNG: Portable Network Graphics, GIF의 대체 포맷으로 개발됨, 비손실 압축 (비교적 용량 큼), 8비트 256색상 / 24비트 약 1600만 색상 컬러 이미지, 알파 채널 지원, W3C 권장 포맷, 원하는 이미지 영역만 처리 가능 (알파 채널 지원)
         - GIF: Grahphics Interchange Format, 이미지 파일 내 이미지 및 문자열 같은 정보 저장 가능, 비손실 압축, 애니매이션, 8비트 색상만 지원 (다양한 색상 표현에는 적합하지 않음)
         - WEBP: JPG, PNG, GIF 모두를 대체 가능한 구글이 개발한 포맷, 손실/비손실 지원, 애니매이션 지원, 알파 채널 지원 (손실,비손실 모두), IE 지원 불가
-        - SVG: Scalable Vector Graphics, 마크업 언어(HTML/XML) 기반의 벡터 그래픽을 표현하는 포맷. 해상도 영향에서 자유로움 (이유: 점, 선, 면의 수학적인 정보를 가지고 있는 포맷이기 때문에 이 정보가 유효하기만 한다면 어느 해상도든 만들어 낼 수 있음), CSS, JS로도 제어 가능, 파일 / 코드 삽입 가능 (svg 라는 태그로 구성되어 있다) 
+        - SVG: Scalable Vector Graphics, 마크업 언어(HTML/XML) 기반의 벡터 그래픽을 표현하는 포맷. 해상도 영향에서 자유로움 (이유: 점, 선, 면의 수학적인 정보를 가지고 있는 포맷이기 때문에 이 정보가 유효하기만 한다면 어느 해상도든 만들어 낼 수 있음), CSS, JS로도 제어 가능, 파일 / 코드 삽입 가능 (svg 라는 태그로 구성되어 있다)
     - 벡터 (svg): 점, 선 면의 위치(좌표), 색상 등 수학적 정보의 형태로 이루어진 이미지.
       - 정교한 이미지를 표현하기는 어려움 (인물, 풍경 사진 등 표현 어려움)
-      - 확대/축소에서 자유로움, 용량 변화 없음 
+      - 확대/축소에서 자유로움, 용량 변화 없음
       - 주로 로고, 아이콘 표현에 사용 (플랫한 이미지들)
         - 매터리얼 디자인: 고품질 디지털 경험을 구축할 수 있도록 구글에서 만든 디자인 시스템 (방식)
   - 특수 문자
-    - 백틱, 그레이브 (작은 역따옴표), 틸드 (물결 표시), 엑스클러메이션 (느낌표), 앳 사인 (골뱅이), 샵, 넘버 사인, 달러 사인, 퍼센트 사인, 캐럿 (^) 사인 (~ 이상 표현 시 사용), 앰퍼샌드, 애스터리스크 (*), 하이픈, 대시, 마이너스 (-), 언더스코어, 로대시 (Low dash) (_),  Equal sign, Quatation ("), Apostrphe ('), Colon (:), SemiColon (;), Comma (,), Period, Dot (.), Question mark (?), Slash (/), Vertical bar (|), Backslash (\), Parenthesis (퍼렌서시스, 소괄호, 괄호 --> () ), 브레이스 {}, Bracket [], Angle Bracket, 꺽쇠괄호 ( <> )
+    - 백틱, 그레이브 (작은 역따옴표), 틸드 (물결 표시), 엑스클러메이션 (느낌표), 앳 사인 (골뱅이), 샵, 넘버 사인, 달러 사인, 퍼센트 사인, 캐럿 (^) 사인 (~ 이상 표현 시 사용), 앰퍼샌드, 애스터리스크 (\*), 하이픈, 대시, 마이너스 (-), 언더스코어, 로대시 (Low dash) (\_), Equal sign, Quatation ("), Apostrphe ('), Colon (:), SemiColon (;), Comma (,), Period, Dot (.), Question mark (?), Slash (/), Vertical bar (|), Backslash (\), Parenthesis (퍼렌서시스, 소괄호, 괄호 --> () ), 브레이스 {}, Bracket [], Angle Bracket, 꺽쇠괄호 ( <> )
   - 오픈 소스 라이센스
     - 라이센스: 저작권과 관계
     - 오픈소스: 어떤 제품을 개발하는 과정에 필요한 소스 코드나 설계도를 누구나 접근해서 열람할 수 있도록 공개하는 것.
@@ -360,13 +360,13 @@
 - div.test --> test class를 사용하는 div 코드 자동완성. (자동완성 --> Emmet 문법의 도움)
 - h: 200 --> height: 200px
 - bc: orange --> background-color: orange
-- div>ul>li*4{$} <-- CSS 선택자와 관련 있는 내용.
+- div>ul>li\*4{$} <-- CSS 선택자와 관련 있는 내용.
 - HTML
   - 열린/시작 태그 - 닫힌/종료 태그
   - 태그 중첩하면서 부모와 자식 관계 형성
   - Shift + Tab: Outdent / Tab: Indent
   - 하위(후손)요소 <-> 상위(조상)요소
-웹페이지 구상 순서 (만약 자기 자신을 설명하는 웹페이지를 만들 계획이라면?)
+    웹페이지 구상 순서 (만약 자기 자신을 설명하는 웹페이지를 만들 계획이라면?)
   - 기획, Design -> Git, GitHub -> HEAD -> HTML -> CSS -> Styling -> Javascript -> Publish
   - Design Requirment
     - Single page.
@@ -426,7 +426,7 @@
 - 열린 태그, Attribute, Value, 필수 Attribute (img 태그의 src, alt 엑박 속성 등)
 - 글자와 상자: 요소가 화면에 출력되는 특성, 글자 개념, 상자 개념 2가지, 인라인 vs 블록 요소
 - 인라인 요소: span, 콘텐츠 영역 설정 용도, 수평으로 쌓이는 특성, 줄바꿈 = 띄어쓰기로 해석
-  - span, img, a(anchor, 닻, 링크를 건다, 고정시킨다의 느낌) - href 링크 URL 설정, target="_blank" <-- 새탭에서 링크 이동 (브라우저 탭 위치), br (Break), label
+  - span, img, a(anchor, 닻, 링크를 건다, 고정시킨다의 느낌) - href 링크 URL 설정, target="\_blank" <-- 새탭에서 링크 이동 (브라우저 탭 위치), br (Break), label
   - 포함한 컨텐츠 크기만큼 자동으로 줄어듬. (가로, 세로 길이)
   - 글자 요소는 가로, 세로 사이즈 지정 불가, padding, margin은 세로 지정 불가
   - 글자 요소 안에 상자 (블록) 요소 포함 불가
@@ -452,7 +452,7 @@
   - 소스 버전 관리
   - Local 관리 위험성 극복 -> Github, Bitbucket 서버 내 저장
     - Distributed Version Control
-  - Branch 
+  - Branch
 - VsCode
   - Settings - Json 검색 - Edit in settings.json
   - Live Server Install
@@ -464,16 +464,74 @@
 - Custom Property
   - --background-color: blue; <-- 이런 식으로 사용가능
   - var(--background-color)
-  - https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties 
+  - https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 - Data Attribute
   - div[data-display-name='koo'] { color: red }
   - DOMStringMap 에서 보면 data- prefix는 제거되어 있음. (Snake -> CamelCase)
   - 보안 상관없는 데이터만 정의하여 사용
   - const temp = document.querySelector('div[data-display-name="koo"]');
     - console.log(temp.dataset) / console.log(temp.dataset.displayName) / console.log(temp.dataset.index)
-- BEM
+- Media Query
+- BEM (CSS 방법론)
   - Block Element Modifier
     - .card <-> .card--black
-
-
-  
+    - https://getbem.com/introduction/
+    - Ref Link: https://nykim.work/15
+    - 이름을 작성하는 방법에 대한 규칙.
+      - card ui : Block
+        - card 내 이미지, 버튼 등은 Element.
+          - block\_\_element--modifier
+            - .card
+            - .card**image / .card**title / .card**description / .card**button
+            - .card--darkversion
+            - .card\_\_button--blue
+- Homepage Section 구상 (주제 맞게 구상)
+- HTML
+  - i 태그: 이탤릭 폰트 스타일 글자
+  - ul.navbar**menu>li.navbar**menu\_\_item\*6
+  - href="#" <-- 해당 페이지의 최상단으로 이동.
+  - progress 태그 존재
+    - 보통 검색 시 mdn html progress 의 형식으로 검색 시도.
+- CSS
+  - box-sizing: content-box / border-box
+  - position
+    - static (기본값)
+      - top, left 영향 X
+    - relative (원래있던 자리 유지하면서 상대적으로 이동)
+    - absolute (body 기준으로 움직임. 근접한 부모 중에 기본값이 static 이 아닌 부모 기준으로)
+    - Sticky / Fixed
+      - Sticky: 스크롤링 할 때 지정한 위치에 계속 유지
+      - fixed: viewport 기준 (브라우저 창 기준) 으로 지정한 위치에 유지
+  - Centering 기술
+    - flexbox 일 때 중심축에서의 정렬은 justifyContent / 반대축에서의 정렬은 alignItems 사용
+    - 블럭은 한줄에 하나씩 들어가므로 margin: auto 로 주면 브라우저에서 마진을 골고루 설정해준다. (수직은 불가)
+    - textAlign: 블럭 레벨은 적용 안됨 (적용하려면 inner box, div의 마진을 auto로 설정해야 한다.)
+    - transform: translate(50%, 50%) <-- X, Y 축으로부터 각각 50%를 준다는 개념, 수평/수직 중앙 정렬 가능
+      - 자기 자신의 50% 라는 의미
+      - 화면 중앙에 div 위치시키려면?
+        - position: absolute, top, left: 50%, transform: translate(-50%, -50%)
+    - textAlign과 lineHeight을 같이 설정하는 방법
+      - text-align: center, line-height: 부모의 height 값으로 설정하면 수평/수직 중앙 정렬 가능
+  - Background 속성
+    - background-image: url
+    - background-repeat: no-repeat
+    - background-position: center
+    - background-size: cover (반응형으로 구현 가능)
+    - background: center/cover no-repeat url('') <-- 이렇게도 가능
+  - 동적인 요소
+    - Transformation
+      - transform: translateX(100px) - X, Y, Z 값 이동하는 것 가능
+      - scale(1.2) - 1.2배
+      - rotate(45deg)
+      - transform: translate(100px, 100px) scale(2) rotate(46deg)
+    - Transition
+      - .box1:hover
+      - transition-property: background-color
+      - transition-duration: 300ms
+      - transition-timing-function: linear
+      - transition: background-color 300ms linear
+      - transition: all 2s ease
+      - cubic-bezier (cubic-beizer.com)
+  - margin
+    - margin: 1px 0 (위 + 아래 / 왼쪽 + 오른쪽)
+    - margin: 0 0 0 0 (위, 오른쪽, 아래, 왼쪽)
