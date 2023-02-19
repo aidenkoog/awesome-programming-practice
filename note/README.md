@@ -115,8 +115,9 @@
   - 브라우저 내에 자바스크립트 엔진 존재 -> 자바스크립트 실행 가능
   - 자바스크립트는 로컬 파일 시스템은 접근 불가
   - 구글 자바스크립트 엔진 V8
-  - Node.js (웹 백엔드 / 서버 구축)
-  - Node.js 는 컴퓨터에서 직접 실행되기 때문에 파일 시스템 접근 가능
+  - NodeJs
+    - Node.js (웹 백엔드 / 서버 구축)
+    - Node.js 는 컴퓨터에서 직접 실행되기 때문에 파일 시스템 접근 가능
   - DOM (Document Object Model)
   - OOP, Class, Constructor, Prototypes
   - 비동기 처리, Ajax, 브라우저 API
@@ -161,8 +162,9 @@
   - let result = "Result.." / result = 0 (에러) <--- 문자열로 추론
   - 클래스: const person: { name: string; age: number } = { name='', age: 30}
   - any 타입
-  - Tuple 타입, Fixed length array.
-  - Tuple 타입, Push 기능 관련 이슈
+  - Tuple
+    - Tuple 타입, Fixed length array.
+    - Tuple 타입, Push 기능 관련 이슈
   - Enum 타입 - Enum 왜 사용하는지에 대한 근본적인 질문
   - 문자열보다 숫자를 사용하면 메모리 점유와 코드 양 줄일 수 있음.
   - enum CustomEnum { TEST1, TEST2, TEST3 } / CustomEnum.TEST1
@@ -239,8 +241,9 @@
       - MIT: 매사추세츠공과대학, 소스에 명시만 해주면 됨 (프로젝트 소스 코드에 외부에서 가져온 오픈 소스의 라이센스 내용만 정확히 명시하면 충분, 대부분 자동으로 오픈소스가 같이 빌드되기 때문에 따로 관리할 필요는 없음)
       - BSD: 버클리 캘리포니아대학, MIT 와 동일
       - Beerware
-  - Mockito
-  - 테스트 고전파, 런던파
+  - 테스트
+    - Mockito
+    - 테스트 고전파, 런던파
   - 웹접근성, 렌더링 퍼포먼스 개선
   - 이슈 발생 시 이슈 발생 지점 추측 방법
   - SSR, CSR 환경
@@ -525,7 +528,6 @@
       - rotate(45deg)
       - transform: translate(100px, 100px) scale(2) rotate(46deg)
     - Transition
-      - .box1:hover
       - transition-property: background-color
       - transition-duration: 300ms
       - transition-timing-function: linear
