@@ -537,3 +537,16 @@
   - margin
     - margin: 1px 0 (위 + 아래 / 왼쪽 + 오른쪽)
     - margin: 0 0 0 0 (위, 오른쪽, 아래, 왼쪽)
+  - ease, ease in, ease in out, ease out
+- 통상적으로 넓이 1000 ~ 1200px 정도가 데스크탑에서 편하게 볼 수 있는 값.
+- Media Query
+  - 스크린 사이즈가 작을때만 적용되는 부분
+  - 가능하면 최소의 정보만을 작성하는 것이 권장
+- 평소에는 보여지지 않으려면 display: none
+- display: inline
+- 웹 소켓 (WebSocket)
+  - TCP 연결에 완전한 이중 통신 채널을 제공하는 프로토콜.
+  - MDN: https://developer.mozilla.org/ko/docs/Web/API/WebSockets_API/Writing_WebSocket_client_applications
+  - ws, wss (https)
+  - 송신 가능 데이터 타입은 String, Blob, ArrayBuffer
+- flex-grow: 알아서 화면을 메꿔준다.
