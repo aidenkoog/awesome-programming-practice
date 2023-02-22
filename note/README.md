@@ -550,3 +550,11 @@
   - ws, wss (https)
   - 송신 가능 데이터 타입은 String, Blob, ArrayBuffer
 - flex-grow: 알아서 화면을 메꿔준다.
+
+## Link
+
+If you are interested in information about me or other activities, please access the link below.
+
+| Plugin      | LINK                                     |
+| ----------- | ---------------------------------------- |
+| Github page | [https://aidenkoog.github.io/aidenkoog/] |
