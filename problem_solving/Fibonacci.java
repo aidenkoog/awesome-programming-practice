@@ -11,45 +11,34 @@ public class Fibonacci {
     /* O(n) */
     private long[] fiboMemoization = new long[100];
 
-    private long fiboDyn
+    private long fiboDynamicProgramming(int number) {
+        if (number <= 1) {  /* 0 or 1 */
+            return number;
 
-          return number;
-  
-    } else if (fiboMemoization[number
-      return fiboMem
-    
-    } else {
-   
+        } else if (fiboMemoization[number] != 0) {
+            return fiboMemoization[number];
 
-      }
-  }
-
-  /* n -1 => O(n) */
-    ate int fiboIterat n(int number
-      number == 0 ||
-
+        } else {
+            return fiboMemoization[number]
+                    = fiboDynamicProgramming(number - 1) + fiboDynamicProgramming(number - 2);
+        }
     }
-      lowVal = 0;
 
-    int resu
-       highVal --> lowVal, Current result --> highVal */
-    f
-   
+    /* n -1 => O(n) */
+    private int fiboIteration(int number) {
+        if (number == 0 || number == 1) {
+            return number;
+        }
+        int lowVal = 0;
+        int highVal = 1;
+        int result = 0;
 
-          highVal = 
-      }
-    return result;
-      
-    
-    
-    
-    
-
-    
-    
-      
-      
-      
-    
-    
-  
+        /* Original highVal --> lowVal, Current result --> highVal */
+        for (int i = 1; i < number; i++) {
+            result = lowVal + highVal;
+            lowVal = highVal;
+            highVal = result;
+        }
+        return result;
+    }
+}
