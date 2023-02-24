@@ -14,11 +14,13 @@
 - Team Environment Arrangement.
 - AOSP App Porting.
 - VOD App New Implementation.
+  - VOD, Radio
 - 3rd Party App Test / Debugging Point Arrangement.
 - Android Settings With Custom UI.
 - Google CTS
-- Android Media Player
+- Android Media Player App
   - ExoPlayer
   - FFMpegPlayer
+- Android Gallery App
 - API Polling --> Web Socket
 - Web Push
