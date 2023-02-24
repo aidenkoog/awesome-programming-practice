@@ -591,6 +591,9 @@
     - isVisible
     - rootBounds <== option과 관계, 디폴트는 ViewPort 기준
     - target
+- wheel, scroll event
+  - scroll: 브라우저에서 인식하는 스크롤에 대한 모든 이벤트
+  - wheel: 사용자가 조작하는 휠 이벤트
 
 ## Link
 
