@@ -550,6 +550,47 @@
   - ws, wss (https)
   - 송신 가능 데이터 타입은 String, Blob, ArrayBuffer
 - flex-grow: 알아서 화면을 메꿔준다.
+- chrome inspector
+  - Sources 탭
+  - break point => Issue가 되는 부분 클릭 => Scope -> Local -> e: MouseEvent 내 내용 확인
+  - Watch
+    - e.target
+    - e.target.parentNode
+    - e.target.parentNode.dataset.filter
+- forEach((item) => {}) ==== for (let item of itemList) {} === for(let i =0; i< items.length; i++) {project = projects[i]})
+- if (false) {} === false || logic 방식
+- git
+  - add, commit, --amend, stash, stash pop, merge, cherry-pick, rebase
+  - fetch, log, show, log -p
+- overflow
+- 기본 order는 0으로 지정되어 있음.
+- ScrollSpy (JQuery)
+- Intersection Observer API
+  - root <--- Viewport.
+  - const options = { root: null, rootMargin: '0px', threshold: 1}
+    - threshold: 1이면 완전히 들어와야 변화되고 나갈때는 조금만 나가도 변화된다.
+    - root: null <== view port, 내가 어떤것을 기준으로 요소들이 들어오고 나가는지를 확인하고 싶을 때 그 부모 컨테이너를 지정할 수 있다.
+      - ex. root: document.querySelector('.container')
+  - const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+    console.log(entry.target);
+    // 들어오는 것과 나가는 것 따로 처리
+    if (entry.isIntersecting) {
+    entry.target.classList.add('active');
+    console.log(entry.target);
+    } else {
+    console.error(entry.target);
+    }
+    });
+    }, option)
+  - boxes.forEach(box => observer.observe(box));
+    - boundingClientRect
+    - intersectionRatio
+    - intersectionRect
+    - isIntersecting
+    - isVisible
+    - rootBounds <== option과 관계, 디폴트는 ViewPort 기준
+    - target
 
 ## Link
 
