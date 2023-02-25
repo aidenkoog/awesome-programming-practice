@@ -550,6 +550,16 @@
   - ws, wss (https)
   - 송신 가능 데이터 타입은 String, Blob, ArrayBuffer
 - flex-grow: 알아서 화면을 메꿔준다.
+- javascript scroll position
+  - scrollY
+- use strict
+- Arrow function.
+- getBoundingClientRect()
+- querySelector('#bar')
+- data-link
+- scrollIntoView()
+- display none --> block : display 의 경우는 완전히 없어졌다가 나타나는 것이라 애니매이션 적용이 안된다. (transition)
+- pointer-events: none;
 - chrome inspector
   - Sources 탭
   - break point => Issue가 되는 부분 클릭 => Scope -> Local -> e: MouseEvent 내 내용 확인
