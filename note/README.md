@@ -604,6 +604,24 @@
 - wheel, scroll event
   - scroll: 브라우저에서 인식하는 스크롤에 대한 모든 이벤트
   - wheel: 사용자가 조작하는 휠 이벤트
+- Webpage Pulish
+  - Github - Settings - Github page.
+  - Custom Domain
+    - Google domain
+      - http://domains.google.com
+      - Search domain you want to use.
+      - $12 ~ $ 100000
+      - My domains
+      - Github -> Custom domain -> www.aidenkoog.com -> save
+      - Custom domain section's learn more.
+      - Managing a custom domain for your GitHub Pages site
+      - Register DNS ip address provided by GitHub.
+      - Google domain -> my domain -> DNS -> Register DNS of GitHub.
+        - A type. (possible to add an additional DNS)
+      - www, CNAME ==> aidenkoog.github.io. <-- dot mandantory.
+- iOS
+  - cocoapod
+  - pod
 
 ## Link
 
