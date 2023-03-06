@@ -622,6 +622,46 @@
 - iOS
   - cocoapod
   - pod
+- WebRTC (Web Real-Time Communication)
+
+  - 별다른 소프트웨어 없이 카메라, 마이크 등을 사용하여 실시간 커뮤니케이션을 제공해주는 기술
+  - 화상통화, 화상 공유 구현 가능한 오픈 소스
+  - 비디오, 음성 / 일반 데이터가 P2P방식으로 피어간 전송되도록 지원
+  - 자바스크립트 API 로 제공
+  - 관련 용어 정리
+
+    - Data Streams / STUN, TURN servers / Signaling / JSEP / ICE / SIP / SDP / NAT / UDP, TCP / Network Socket 등
+      - Data Streams: 연속적으로 흘러나오는 데이터들의 흐름, 끊임없이 생성되고 변하는 데이터의 흐름
+      - NAT(Network Address Translation): 네트워크 주소 변환, IP 패킷의 TCP/UDP 포트 숫자와 소스 및 목적지의 IP 등을 재기록하면서 네트워크 트래픽을 주고 받는 기술
+      - Signaling: P2P 통신 일어나기 전, 데이터가 전송되기 전, 세션 제어 메세지, 네트워크 구성, 미디어 기능 등의 정보를 교환하는 데 사용
+        - P2P 스트리밍을 시작하기 전에 성공적으로 완료되어져야 함.
+        - 세션 제어 메세지: 통신 초기화 / 오류 보고
+        - 네트워크 구성: 외부 세계에 컴퓨터의 아이피 주소와 포트는 무엇인지 파악.
+        - 미디어 기능: 브라우저와 통신하려는 브라우저에서 처리할 수 있는 코덱과 해상도는 무엇인지 파악
+      - SDP (Session Description Protocol)
+      - JSEP (Javascript Session Establishment Protocol) 제안 / 응답 아키텍처
+        - 시그널링 + 앱 + 세션 디스크립션 + 웹 RTC + 브라우저 + 미디어 데이터 전송 + Caller / Callee 구성도
+      - ICE (Interactive Connectivity Establishment)
+        - 두 단말이 서로 통신할 수 있는 최적의 경로를 찾을 수 있도록 도와주는 프레임워크
+          - TURN, STUN 서버 사용한 경로 찾기
+      - STUN (Session Traversal Utilities for NAT)
+        - 해당 Peer의 Public IP 주소를 보내는 역할
+      - TURN (Traversal Using Relays around NAT)
+      - ICE Candidate Gathering
+        - Local Address, Server Reflexive Address, Relyaed Address 등 통신 가능한 주소들을 모두 가져온다.
+
+  - 장점
+    - Latency 짧음
+      - 예. 인스타라이브, 유튜브라이브, 트위치 등은 RTMP 방식의 실시간 스트리밍
+      - 별도 플러그인 또는 미디어 송출 관련 소프트웨어 설치 불필요
+      - 러닝커브 낮음
+      - 무료 라이센스
+  - 단점
+    - 크로스 브라우징 문제
+    - Peer To Peer 통신 위해서는 사용자 IP를 알아야 하나 대부분의 사용자는 방화벽 등을 사용하므로 서로 다른 네트워크 상에서 연결을 맺기 위해서는 STUN / TURN 서버가 반드시 필요하다.
+  - Peer To Peer 통신
+    - 하나의 컴퓨터와 하나의 컴퓨터가 데이터를 주고 받는 형식.
+    - 동등 계층 간 클라이언트 / 서버의 개념이 없이 동등한 노드들로 구성되어 데이터를 주고 받는다.
 
 ## Link
 
