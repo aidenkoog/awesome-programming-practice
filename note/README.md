@@ -98,7 +98,7 @@
     - 패키지: styled components
     - ex. const Button = styled.button``
     - & input:focus, & label
-    - props 사용한 동적 스타일 구성 ($와 {}활용)
+    - props 사용한 동적 스타일 구성 (\$와 {}활용)
     - 미디어 쿼리 @media
     - CSS 모듈: Button.module.css 등
   - Users -> src -> 원본소스 확인 -> 브레이크 포인트 설정
@@ -137,7 +137,7 @@
   - Case Sensitive / Camel Case Format
   - Snake Case is NOT recommended.
   - "+ - \* / % \*\*"
-  - 백틱 문자 ($ 사용 가능, 코틀린과 유사), 쌍따옴표 내 싱글 따옴표
+  - 백틱 문자 (\$ 사용 가능, 코틀린과 유사), 쌍따옴표 내 싱글 따옴표
   - 템플릿 리터럴
   - Arrow Function: 코드 양 줄일 수 있고 다양한 형태로 작성 가능
     - const add = (a, b) => a + b;
@@ -242,7 +242,7 @@
       - 아파치: 개인/상업적, 배포 수정, 특허 신청 가능
       - MIT: 매사추세츠공과대학, 소스에 명시만 해주면 됨 (프로젝트 소스 코드에 외부에서 가져온 오픈 소스의 라이센스 내용만 정확히 명시하면 충분, 대부분 자동으로 오픈소스가 같이 빌드되기 때문에 따로 관리할 필요는 없음)
       - BSD: 버클리 캘리포니아대학, MIT 와 동일
-      - Beerwareㄷ
+      - Beerware
   - 테스트
     - Mockito
     - 테스트 고전파, 런던파
@@ -306,16 +306,18 @@
   - CMD + F: 찾기
   - OPT + UP/Down: 라인 이동
   - OPT + Shift + Up/Down: 라인 복사
-  - TAB, 권장 탭 공백 개수: 2
+  - TAB, 권장 탭 공백 개수: 2 칸
   - Shift + TAB : 내어쓰기 (아웃덴트)
     - Indent Using Spaces 메뉴에서 설정 가능
   - Beautify 기능도 고려.
   - 탭 이동: CMD + Shift + [ / ]
   - CMD + \: 분할 창 모드
+- 참고. index.html --> 브라우저가 프로젝트 단위로 화면에 출력될 때 index 라는 이름을 가진 html 파일을 찾아서 우선적으로 연다.
+  - 브라우저가 시작하는 파일을 잘 찾을 수 있게 index.html로 지정한다.
 - !DOCTYPE html <-- 문서의 HTML 버전을 지정
   - DTD, Document Type Definition 은 마크업 언어에서 문서 형식을 정의, 웹 브라우저가 어떤 HTML 버전의 해석 방식으로 페이지를 이해하면 되는 지를 알려주는 용도. (개발자가 브라우저에게 알려주는 것)
   - HTML1 ~ 4, XHTML, HTML5 (표준)
-  - ex. !DOCTYPE html PUBLIC .. <-- 표준이 아닌 과거 버전
+  - ex. !DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Trans ..." <-- 표준이 아닌 과거 버전
   - html <-- 문서의 전체 범위를 지칭하는 태그
   - head <-- 문서의 정보를 나타내는 범위, 웹 브라우저가 해석해야 하는 정보 (제목, 설명, 파일 위치, CSS, 비가시적인 정보를 작성하는 범위)
   - body <-- 문서의 구조를 나타내는 범위, 사용자의 화면을 통해 보여지는 로고, 헤더, 푸터, 내비게이션, 메뉴, 버튼, 이미지같은 웹페이지의 보여지는 구조를 작성하는 범위.
@@ -332,21 +334,29 @@
     - name: 정보의 종류
     - content: 정보의 값
   - (참고) viewport: 웹페이지가 출력되는 영역, 모바일에만 해당하는 속성
+    - initial-scale=1.0 <--- 초기 줌 레벨 (모바일에서는 줌 인/아웃으로 컨텐츠를 보므로)
   - charset, 문자 인코딩 방식: 브라우저에서는 주로 UTF-8 사용이 권장 (EUC-KR --> UTF-8)
+    - EUC-KR: 구, UTF-8: ㄱ ㅜ (Character Set으로 처리)
 - img: 이미지 태그, alt (alternative) 는 이미지가 출력되지 못하는 경우 대신 출력할 텍스트를 지정, 대체 텍스트, 이미지 경로 및 네트워크 상태 불안정 등으로 인해 이미지 출력이 어려운 경우 이미지 대신 출력되는 글자. (필수 속성)
 - 사이트 접속하여 개발자 도구 연 다음 Element 탭 왼쪽에 있는 선택 아이콘을 눌러 이미지 경로를 파악한다.
 - 상대경로 / 절대경로
 - http://127.0.0.1:5500/index.html <-- 라이브 서버 5500포트 (== http://localhost:5500)
+  - localhost => 127.0.0.1
   - localhost: 우리의 컴퓨터 환경, 루트 경로에 있는 index.html 파일을 연다.
 - . 이 있는 것과 없는 것 (예. ./images/xxx, images/xxx)
 - 루트(/) <-- 최상위 경로, 프로젝트의 최상위 루트 경로
 - 다른 사이트로부터 이미지를 가져오는 것: 절대 경로의 개념
 - /images: (http://localhost:5500)/images 와 동일 개념
+- ./ <-- 생략가능
 - a href 태그 (글자 보라색, 파란색 의미)
+  - hyper text reference
 - 폴더로 접근하면 브라우저는 기본적으로 index.html 이라는 파일을 최우선으로 찾는다. (명시적인 html 파일 경로 지정이 없으면)
 - 주소창에 xxx:5500/login 이라고 해서 꼭 폴더는 아니다. (라우터라는 것이 있다.)
+- css 파일 안에서 background url 할 때 상대경로 기준은 css 파일 기준이므로 images 폴더 접근 시 html에서 하듯이 동일하게 하면 안된다.
+  - ex. ../images/logo.png
 - VsCode 환경설정
-  - Code -> 기본설정 -> 설정 -> tab size 입력 (CMD + Shift + P -> 설정 입력)
+  - Code -> 기본설정 -> 설정 -> tab size 입력
+    - 전체 찾기 / 실행: (CMD + Shift + P -> 설정 입력)
 - 크롬 - 개발자도구 - Elements - element.style: CSS의 인라인 선언 방식으로 스타일이 삽입됨. (새로고침하면 다시 복구)
 - CSS 선택자 개념
 - HTML, CSS 는 크롬 인스펙터 통해 비교적 쉽게 분석 가능하나 자바스크립트는 보통 비즈니스 로직이 들어가기 때문에 난독화 과정을 거치므로 분석하기에는 어려움이 있음.
@@ -361,11 +371,11 @@
   - 각각의 벤더사들, 애플, 구글, 크로스 브라우징
   - 브라우저에서 기본적으로 제공하는 CSS 스타일을 기본적으로 초기화하고 작업을 시작하는 것이 권장됨. (reset.css cdn)
     - "https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" <-- stylesheet 관계, link 태그 작성 --> 브라우저에서 기본적으로 제공하는 마진 삭제됨.
-    - Codepen 에서 적용하려면 CSS Base 를 리셋으로 설정
-- div.test --> test class를 사용하는 div 코드 자동완성. (자동완성 --> Emmet 문법의 도움)
+    - Codepen 에서 적용하려면 CSS Base 를 Reset으로 설정
+- div.test --> test class를 사용하는 div 코드 자동완성. (자동완성 --> Emmet (에밋) 문법의 도움)
 - h: 200 --> height: 200px
 - bc: orange --> background-color: orange
-- div>ul>li\*4{$} <-- CSS 선택자와 관련 있는 내용.
+- div>ul>li\*4{\$} <-- CSS 선택자와 관련 있는 내용.
 - HTML
   - 열린/시작 태그 - 닫힌/종료 태그
   - 태그 중첩하면서 부모와 자식 관계 형성
