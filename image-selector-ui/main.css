@@ -1,0 +1,73 @@
+body {
+  height: 100vh;
+  background-color: #999;
+}
+
+.container {
+  padding: 50px 0px;
+}
+
+.container .image__selectors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+.container .image__selectors .image__selector {
+  width: 80px;
+  height: 84px;
+  margin: 4px;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: #555;
+  overflow: hidden;
+  transform: skewX(-14deg);
+  transition: transform 0.1s, background-color 0.6s;
+}
+
+.container .image__selectors .image__selector:hover {
+  background-color: #ff9c00;
+  transform: skewX(-14deg) scale(1.2);
+  z-index: 1;
+}
+
+.container .image__selectors .image__selector .image {
+  width: 50%;
+  height: 50%;
+  transform: skewX(14deg) translateY(16px);
+  margin: 0 auto;
+}
+
+.container .image__selectors .image__selector:nth-child(1) .image {
+  background-color: #678;
+}
+.container .image__selectors .image__selector:nth-child(2) .image {
+  background-color: #123;
+}
+.container .image__selectors .image__selector:nth-child(3) .image {
+  background-color: #678;
+}
+.container .image__selectors .image__selector:nth-child(4) .image {
+  background-color: #123;
+}
+.container .image__selectors .image__selector:nth-child(5) .image {
+  background-color: #678;
+}
+.container .image__selectors .image__selector:nth-child(6) .image {
+  background-color: #123;
+}
+.container .image__selectors .image__selector:nth-child(7) .image {
+  background-color: #678;
+}
+.container .image__selectors .image__selector:nth-child(8) .image {
+  background-color: #123;
+}
+.container .image__selectors .image__selector:nth-child(9) .image {
+  background-color: #678;
+}
+.container .image__selectors .image__selector:nth-child(10) .image {
+  background-color: #123;
+}
