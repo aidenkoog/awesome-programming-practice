@@ -7,7 +7,12 @@ class KooHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('Koo Home Page')),
-      body: const Center(child: Text('center')),
+      body: Container(
+          color: Colors.yellow,
+          alignment: Alignment.topCenter,
+          padding: const EdgeInsets.symmetric(horizontal: 100, vertical: 50),
+          margin: const EdgeInsets.symmetric(horizontal: 100, vertical: 100),
+          child: const Text('center')),
     );
   }
 }
