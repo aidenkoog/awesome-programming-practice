@@ -3,5 +3,5 @@ git stash
 git pull origin master
 git stash pop
 git add .
-git commit -m "[Feature] Update coding study"
+git commit -m "[feat.] Update programming practice code"
 git push origin master
