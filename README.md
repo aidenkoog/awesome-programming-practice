@@ -9,6 +9,10 @@
 - 👉 typescript
 - 👉 vanila_js
 
+#### Commit History
+
+- 2023/05/10: Added list and animation test code of Flutter.
+
 #### Link
 
 If you are interested in information about me or other activities, please access the link below.
