@@ -1,3 +1,7 @@
+# Notice
+- As of October 18, 2023, this repository will no longer be maintained.
+- From now on, only repositories with the awesome prefix will be managed.
+
 ### Programming Practice
 
 - This is a repository where I upload exercise / sample / example codes I study and write every day.
