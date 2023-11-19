@@ -1,0 +1,144 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+// ktlint
+configurations {
+    ktlint
+    detekt
+}
+
+android {
+    namespace 'io.github.aidenkoog.androidpractice'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "io.github.aidenkoog.androidpractice"
+        minSdk 26
+        targetSdk 34
+        versionCode 100
+        versionName "1.0.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables {
+            useSupportLibrary true
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    buildFeatures {
+        compose true
+    }
+
+    composeOptions {
+        kotlinCompilerExtensionVersion '1.3.2'
+    }
+
+    packagingOptions {
+        resources {
+            excludes += '/META-INF/{AL2.0,LGPL2.1}'
+        }
+    }
+    // ViewBinding.
+    viewBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+
+    // ktlint
+    ktlint("com.pinterest.ktlint:ktlint-cli:1.0.1") {
+        attributes {
+            attribute(Bundling.BUNDLING_ATTRIBUTE, getObjects().named(Bundling, Bundling.EXTERNAL))
+        }
+    }
+    detekt 'io.gitlab.arturbosch.detekt:detekt-cli:1.22.0-RC3'
+
+    // compose
+    implementation 'androidx.core:core-ktx:1.12.0'
+    implementation platform('org.jetbrains.kotlin:kotlin-bom:1.8.0')
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.6.2'
+    implementation 'androidx.activity:activity-compose:1.8.0'
+    implementation platform('androidx.compose:compose-bom:2022.10.00')
+    implementation 'androidx.compose.ui:ui'
+    implementation 'androidx.compose.ui:ui-graphics'
+    implementation 'androidx.compose.ui:ui-tooling-preview'
+    implementation 'androidx.compose.material3:material3'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    androidTestImplementation platform('androidx.compose:compose-bom:2022.10.00')
+    androidTestImplementation 'androidx.compose.ui:ui-test-junit4'
+    debugImplementation 'androidx.compose.ui:ui-tooling'
+    debugImplementation 'androidx.compose.ui:ui-test-manifest'
+
+    // xml type
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.10.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+}
+
+/**
+ * ktlint
+ *
+ * lint: 코드를 분석하여 프로그램 오류 / 버그 / 스타일 오류 / 구조적 문제점을 확인하는 도구
+ * 코딩 컨벤션에 따라 코드 작성이 제대로 되었는지 확인해주는 도구
+ *
+ * ktlint: kotlin 환경에서 사용되는 lint, 공식 코틀린 코딩 컨벤션과 안드로이드 코틀린 스타일 가이드에 따라 만들어짐
+ * Android lint: Project 선택 > Analyze > Inspect Code
+ *
+ * 참고 사이트:
+ * - https://pinterest.github.io/ktlint/latest/install/integrations/
+ * - https://pinterest.github.io/ktlint/install/cli/#command-line-usage
+ * - Installation > Integrations > Code 확인*/
+
+task ktlint(type: JavaExec, group: "verification") {
+    description = "Check Kotlin code style."
+    classpath = configurations.ktlint
+    mainClass.set("com.pinterest.ktlint.Main")
+    args "src/**/*.kt"
+}
+check.dependsOn ktlint
+
+task ktlintFormat(type: JavaExec, group: "formatting") {
+    description = "Fix Kotlin code style deviations."
+    classpath = configurations.ktlint
+    mainClass.set("com.pinterest.ktlint.Main")
+    args "-F", "src/**/*.kt"
+}
+
+// detekt
+task detekt(type: JavaExec) {
+    mainClass.set("io.gitlab.arturbosch.detekt.cli.Main")
+    classpath = configurations.detekt
+
+    def input = "$projectDir"
+    def exclude = ".*/build/.*,.*/resources/.*"
+
+    // detekt.yml <-- default detekt yml file.
+    // https://detekt.dev/ 에서 디폴트 야물 파일 다운로드 가능.
+    // Configuration 방법: EmptyElseBlock active 조정 등으로 설정 가능
+    def config = "$rootDir/detekt.yml"
+
+    // config 를 파라미터로 추가를 해줘야 정상 동작
+    def params = ['-i', input, '-ex', exclude, '-c', config]
+
+    args(params)
+}

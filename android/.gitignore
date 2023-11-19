@@ -1,6 +1,3 @@
-# Created by https://www.toptal.com/developers/gitignore/api/flutter,dart,android,java,kotlin,react,reactnative,python,swift,xcode,eclipse,androidstudio,visualstudiocode,windows,macos
-# Edit at https://www.toptal.com/developers/gitignore?templates=flutter,dart,android,java,kotlin,react,reactnative,python,swift,xcode,eclipse,androidstudio,visualstudiocode,windows,macos
-
 ### Android ###
 # Gradle files
 .gradle/
@@ -236,6 +233,21 @@ replay_pid*
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 
+### Linux ###
+*~
+
+# temporary files which can be created if a process still has a handle open of a deleted file
+.fuse_hidden*
+
+# KDE directory preferences
+.directory
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+# .nfs files are created when an open file is removed but is still being accessed
+.nfs*
+
 ### macOS ###
 # General
 .DS_Store
@@ -268,6 +280,71 @@ Temporary Items
 ### macOS Patch ###
 # iCloud generated files
 *.icloud
+
+### Objective-C ###
+# Xcode
+#
+# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+
+## User settings
+xcuserdata/
+
+## compatibility with Xcode 8 and earlier (ignoring not required starting Xcode 9)
+*.xcscmblueprint
+*.xccheckout
+
+## compatibility with Xcode 3 and earlier (ignoring not required starting Xcode 4)
+DerivedData/
+*.moved-aside
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+
+## Obj-C/Swift specific
+*.hmap
+
+## App packaging
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# CocoaPods
+# We recommend against adding the Pods directory to your .gitignore. However
+# you should judge for yourself, the pros and cons are mentioned at:
+# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
+# Pods/
+# Add this line if you want to avoid checking in source code from the Xcode workspace
+# *.xcworkspace
+
+# Carthage
+# Add this line if you want to avoid checking in source code from Carthage dependencies.
+# Carthage/Checkouts
+
+Carthage/Build/
+
+# fastlane
+# It is recommended to not store the screenshots in the git repo.
+# Instead, use fastlane to re-generate the screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://docs.fastlane.tools/best-practices/source-control/#source-control
+
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# Code Injection
+# After new code Injection tools there's a generated folder /iOSInjectionProject
+# https://github.com/johnno1962/injectionforxcode
+
+iOSInjectionProject/
+
+### Objective-C Patch ###
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
@@ -460,12 +537,8 @@ sketch
 __generated__
 
 ### ReactNative.Xcode Stack ###
-## User settings
-xcuserdata/
 
 ## Xcode 8 and earlier
-*.xcscmblueprint
-*.xccheckout
 
 ### ReactNative.Gradle Stack ###
 .gradle
@@ -502,19 +575,14 @@ gradle-app.setting
 # Directories potentially created on remote AFP share
 
 ### ReactNative.Linux Stack ###
-*~
 
 # temporary files which can be created if a process still has a handle open of a deleted file
-.fuse_hidden*
 
 # KDE directory preferences
-.directory
 
 # Linux trash folder which might appear on any partition or disk
-.Trash-*
 
 # .nfs files are created when an open file is removed but is still being accessed
-.nfs*
 
 ### ReactNative.Node Stack ###
 # Logs
@@ -668,31 +736,12 @@ buck-out/
 
 ### Swift ###
 # Xcode
-#
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
 
-## compatibility with Xcode 8 and earlier (ignoring not required starting Xcode 9)
 
-## compatibility with Xcode 3 and earlier (ignoring not required starting Xcode 4)
-DerivedData/
-*.moved-aside
-*.pbxuser
-!default.pbxuser
-*.mode1v3
-!default.mode1v3
-*.mode2v3
-!default.mode2v3
-*.perspectivev3
-!default.perspectivev3
 
-## Obj-C/Swift specific
-*.hmap
 
-## App packaging
-*.ipa
-*.dSYM.zip
-*.dSYM
 
 ## Playgrounds
 timeline.xctimeline
@@ -722,7 +771,6 @@ playground.xcworkspace
 # Add this line if you want to avoid checking in source code from Carthage dependencies.
 # Carthage/Checkouts
 
-Carthage/Build/
 
 # Accio dependency management
 Dependencies/
@@ -734,16 +782,11 @@ Dependencies/
 # For more information about the recommended setup visit:
 # https://docs.fastlane.tools/best-practices/source-control/#source-control
 
-fastlane/report.xml
-fastlane/Preview.html
-fastlane/screenshots/**/*.png
-fastlane/test_output
 
 # Code Injection
 # After new code Injection tools there's a generated folder /iOSInjectionProject
 # https://github.com/johnno1962/injectionforxcode
 
-iOSInjectionProject/
 
 ### VisualStudioCode ###
 .vscode/*
@@ -763,6 +806,21 @@ iOSInjectionProject/
 # Ignore all local history of files
 .history
 .ionide
+
+### Web ###
+*.asp
+*.cer
+*.csr
+*.css
+*.htm
+*.html
+*.js
+*.jsp
+*.php
+*.rss
+*.wasm
+*.wat
+*.xhtml
 
 ### Windows ###
 # Windows thumbnail cache files
@@ -789,18 +847,6 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
-
-### Xcode ###
-
-
-### Xcode Patch ###
-*.xcodeproj/*
-!*.xcodeproj/project.pbxproj
-!*.xcodeproj/xcshareddata/
-!*.xcodeproj/project.xcworkspace/
-!*.xcworkspace/contents.xcworkspacedata
-/*.gcno
-**/xcshareddata/WorkspaceSettings.xcsettings
 
 ### AndroidStudio ###
 # Covers files to be ignored for android development using Android Studio.
@@ -910,5 +956,3 @@ fabric.properties
 ### AndroidStudio Patch ###
 
 !/gradle/wrapper/gradle-wrapper.jar
-
-# End of https://www.toptal.com/developers/gitignore/api/flutter,dart,android,java,kotlin,react,reactnative,python,swift,xcode,eclipse,androidstudio,visualstudiocode,windows,macos

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Linear : 선형, Orientation 속성 필수 (디폴트: horizontal) -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- sp, dp 차이 -->
+    <!-- gravity / layout_gravity (linearlayout 에서 사용 가능한 속성) -->
+    <TextView
+        android:id="@+id/numberTextView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/blue"
+        android:textSize="100sp"
+        android:textStyle="bold|italic"
+        tools:ignore="HardcodedText" />
+
+    <!-- LinearLayout 에서 weight 를 적용하려면 해당 Orientation에 대한 크기를 0으로 설정해줘야 함. -->
+    <!-- 아래는 orientation 이 horizontal 이므로 layout_width 를 0 으로 설정해야 함.-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/resetButton"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="2"
+            android:text="초기화"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/plusButton"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_weight="2"
+            android:text="+"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+</LinearLayout>
