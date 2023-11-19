@@ -1,17 +1,20 @@
 ### Awesome Programming Practice
 
-- This is a repository where I upload exercise / sample / example codes I study and write every day.
+- Repository where I upload practice code I study.
 
 #### Folder Structure
 
+- 👉 android
 - 👉 dart
 - 👉 flutter
 - 👉 typescript
+- 👉 kotlin
 - 👉 vanila_js
 
 #### Commit History
 
 - 2023/05/10: Added list and animation test code of Flutter.
+- 2023/11/19: Added android practice code
 
 #### Link
 
