@@ -64,4 +64,18 @@ class Practice1 {
             numList.fold(1) { total, num -> total * num }
         }
     }
+
+    // 특정 문자열에 대한 커스터마이징
+    fun solution6(my_string: String, alp: String): String {
+        var answer = ""
+        val hasAlp = my_string.contains(alp, true)
+        if (hasAlp) {
+            // my_string을 배열로 변환 또는 스트링 상태에서 요소들 접근 어떻게 하는가?
+            for (i in 0 until my_string.length) {
+                //
+            }
+            answer = my_string
+        }
+        return answer
+    }
 }
