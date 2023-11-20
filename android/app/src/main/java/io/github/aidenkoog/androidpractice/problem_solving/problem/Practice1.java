@@ -1,4 +1,4 @@
-package io.github.aidenkoog.androidpractice.problem_solving.java;
+package io.github.aidenkoog.androidpractice.problem_solving.problem;
 
 import java.util.ArrayList;
 

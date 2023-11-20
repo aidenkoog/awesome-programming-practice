@@ -1,6 +1,6 @@
-package io.github.aidenkoog.androidpractice.problem_solving.kotlin
+package io.github.aidenkoog.androidpractice.problem_solving.problem
 
-class Practice1 {
+class PracticeKotlin1 {
     // 문자열 포함 여부
     fun solution(my_string: String, target: String): Int = if (my_string.contains(target)) 1 else 0
 
