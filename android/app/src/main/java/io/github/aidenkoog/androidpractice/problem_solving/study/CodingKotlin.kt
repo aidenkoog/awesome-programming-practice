@@ -20,4 +20,14 @@ class CodingKotlin {
         }
         return false
     }
+
+    fun linkedlist() {
+        val firstNode = Node()
+        // head
+    }
+
+    class Node {
+        var value: Int = 0
+        var next: Any? = null
+    }
 }
