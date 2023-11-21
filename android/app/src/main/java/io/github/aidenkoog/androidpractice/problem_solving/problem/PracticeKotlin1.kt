@@ -78,4 +78,16 @@ class PracticeKotlin1 {
         }
         return answer
     }
+
+    fun twoSum(nums: IntArray, target: Int): Boolean {
+        val size = nums.size
+        for (i in nums) { // 0 ~ n - 1
+            for (j in i + 1..size) {    // i + 1 ~ n
+                if (nums[i] + nums[j] == target) {
+                    return true
+                }
+            }
+        }
+        return false
+    }
 }
