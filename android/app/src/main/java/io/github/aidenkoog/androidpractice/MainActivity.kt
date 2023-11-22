@@ -10,6 +10,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import io.github.aidenkoog.androidpractice.problem_solving.study.CodingJava
 import io.github.aidenkoog.androidpractice.ui.theme.AndroidPracticeTheme
 
 class MainActivity : ComponentActivity() {

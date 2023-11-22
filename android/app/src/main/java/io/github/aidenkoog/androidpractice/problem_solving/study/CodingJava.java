@@ -1,13 +1,18 @@
 package io.github.aidenkoog.androidpractice.problem_solving.study;
 
 public class CodingJava {
-    public static void main(String[] args) {
-        System.out.println("test");
 
-        // java.lang.String
+    public static void main(String[] args) {
+        practice();
+    }
+
+    public static void run() {
+
     }
 
     public static void practice() {
+
+        System.out.println("##################################################");
         // String
         String str = "adsdfsdfs";
         str = "sdfhsdkfjshdkf";
@@ -30,5 +35,6 @@ public class CodingJava {
         // 스트링 메소드
         // charAt / length / equals / compareTo / toCharArray / contains / replace / split /
         // substring / indexOf (문자의 위치를 반환) / toLowerCase / toUpperCase
+        System.out.println("##################################################");
     }
 }
