@@ -74,3 +74,8 @@
     - enqueue / dequeue
     - pop 즉 dequeue 할 때 배열 리스트는 빅오 n, pop 한다음에 데이터들을 앞으로 땡겨줘야 하므로.
     - Deque 는 링크드 리스트로 구현 (파이선, 빅오 1), BFS 에서 많이 쓰임
+- 스택
+    - push / pop / top
+    - push & pop => BigO n
+    - DFS (깊이 우선 탐색)
+    - 2중 For 문 구조를 스택으로 변경 가능한지 생각
