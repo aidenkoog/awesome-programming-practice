@@ -1,6 +1,8 @@
 package io.github.aidenkoog.androidpractice.problem_solving.study;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class CodingJava {
 
@@ -19,6 +21,9 @@ public class CodingJava {
 
         boolean isBefore = date1.isBefore(date2);
         System.out.println("date1이 date2보다 과거? " + isBefore);
+
+        String converted = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+        System.out.println("current time format: " + converted);
     }
 
     public static void practice() {
