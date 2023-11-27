@@ -1,13 +1,24 @@
 package io.github.aidenkoog.androidpractice.problem_solving.study;
 
+import java.time.LocalDate;
+
 public class CodingJava {
 
     public static void main(String[] args) {
         practice();
+        practiceLocalDate();
     }
 
     public static void run() {
 
+    }
+
+    public static void practiceLocalDate() {
+        LocalDate date1 = LocalDate.parse("2021-01-01");
+        LocalDate date2 = LocalDate.parse("2021-01-02");
+
+        boolean isBefore = date1.isBefore(date2);
+        System.out.println("date1이 date2보다 과거? " + isBefore);
     }
 
     public static void practice() {
