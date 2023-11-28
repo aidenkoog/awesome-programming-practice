@@ -1,3 +1,5 @@
+package io.github.aidenkoog.androidpractice.coroutine.section1
+
 import kotlin.random.Random
 import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.*
@@ -11,7 +13,7 @@ fun flowSomething2(): Flow<Int> = flow {
 
 //fun main() {
 //    runBlocking {
-//        flowSomething().collect {
+//        io.github.aidenkoog.androidpractice.coroutine.section1.flowSomething().collect {
 //            value -> println(value)
 //        }
 //    }

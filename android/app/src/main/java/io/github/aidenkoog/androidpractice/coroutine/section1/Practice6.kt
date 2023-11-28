@@ -1,3 +1,5 @@
+package io.github.aidenkoog.androidpractice.coroutine.section1
+
 import kotlin.random.Random
 import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.*

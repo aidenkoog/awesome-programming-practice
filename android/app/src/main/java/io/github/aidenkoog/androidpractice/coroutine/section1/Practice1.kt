@@ -1,3 +1,5 @@
+package io.github.aidenkoog.androidpractice.coroutine.section1
+
 import kotlinx.coroutines.*
 
 // 코루틴 스코프의 코루틴은 부모 코루틴 => launch 는 자식 코루틴
@@ -43,16 +45,16 @@ suspend fun doTwo() {
 
 //fun main() {
 //    runBlocking<Unit> {
-//        doOneTwoThree()
+//        io.github.aidenkoog.androidpractice.coroutine.section1.doOneTwoThree()
 //    }
 //    //     runBlocking<Unit> { // this: 코루틴
 //    //         launch {	// launch는 반드시 코루틴 안에서 호출 필요, this: 코루틴, Receiver, 수신객체
-//    //             doThree() // suspension point
+//    //             io.github.aidenkoog.androidpractice.coroutine.section1.doThree() // suspension point
 //    //         }
 //    //         launch {
-//    //             doOne()
+//    //             io.github.aidenkoog.androidpractice.coroutine.section1.doOne()
 //    //         }
-//    // 		doTwo()
+//    // 		io.github.aidenkoog.androidpractice.coroutine.section1.doTwo()
 //    //         delay(100L)	// suspension point
 //    //     }
 //    println("4!")

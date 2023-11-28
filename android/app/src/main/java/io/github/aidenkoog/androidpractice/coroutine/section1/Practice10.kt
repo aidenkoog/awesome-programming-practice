@@ -1,6 +1,7 @@
+package io.github.aidenkoog.androidpractice.coroutine.section1
+
 import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.*
-import kotlin.system.*
 
 fun simple(): Flow<String> = flow {
     for (i in 1..3) {

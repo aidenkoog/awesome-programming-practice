@@ -1,3 +1,5 @@
+package io.github.aidenkoog.androidpractice.coroutine.section1
+
 import kotlin.system.measureTimeMillis
 import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.delay
@@ -15,8 +17,8 @@ suspend fun getRandom2(): Int {
 
 //fun main() = runBlocking {
 //    val elapsedTime = measureTimeMillis {
-//        val value1 = getRandom1()
-//        val value2 = getRandom2()
+//        val value1 = io.github.aidenkoog.androidpractice.coroutine.section1.getRandom1()
+//        val value2 = io.github.aidenkoog.androidpractice.coroutine.section1.getRandom2()
 //        println("${value1} + ${value2} = ${value1 + value2}")
 //    }
 //    println(elapsedTime)

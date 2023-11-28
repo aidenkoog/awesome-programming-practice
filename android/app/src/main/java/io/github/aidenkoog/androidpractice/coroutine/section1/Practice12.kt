@@ -1,17 +1,18 @@
+package io.github.aidenkoog.androidpractice.coroutine.section1
+
 import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.*
 import kotlin.system.*
 import kotlinx.coroutines.channels.*
 
 fun main() = runBlocking<Unit> {
-    val channel = Channel<Int>()
-    launch {
+    val oneToTen = produce {
         for (x in 1..10) {
             channel.send(x)
         }
     }
-    repeat(10) {
-        println(channel.receive())
+    oneToTen.consumeEach {
+        println(it)
     }
-    println("completed")
+    println("completed!")
 }

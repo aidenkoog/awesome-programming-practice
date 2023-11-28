@@ -1,6 +1,6 @@
+package io.github.aidenkoog.androidpractice.coroutine.section1
+
 import kotlinx.coroutines.*
-import kotlinx.coroutines.flow.*
-import kotlin.system.*
 import kotlinx.coroutines.channels.*
 
 fun CoroutineScope.produceNumbers() = produce<Int> {

@@ -1,6 +1,7 @@
+package io.github.aidenkoog.androidpractice.coroutine.section1
+
 import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.*
-import kotlin.system.*
 
 fun log(msg: String) = println("[$(Thread.currentThread().name)] $msg")
 
@@ -14,7 +15,7 @@ fun simple3(): Flow<Int> = flow {
 
 //fun main() = runBlocking<Unit> {
 //    val time = measureTimeMillis {
-//        simple().buffer().collect {
+//        io.github.aidenkoog.androidpractice.coroutine.section1.simple().buffer().collect {
 //            delay(300L)
 //            log("$it received")
 //        }
