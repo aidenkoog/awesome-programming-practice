@@ -44,6 +44,8 @@ android {
 
     buildFeatures {
         compose true
+        viewBinding = true
+        dataBinding = true
     }
 
     composeOptions {
@@ -54,10 +56,6 @@ android {
         resources {
             excludes += '/META-INF/{AL2.0,LGPL2.1}'
         }
-    }
-    // ViewBinding.
-    viewBinding {
-        enabled = true
     }
 }
 
