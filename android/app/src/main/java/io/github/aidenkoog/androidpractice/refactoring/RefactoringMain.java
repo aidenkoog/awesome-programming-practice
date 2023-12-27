@@ -29,6 +29,11 @@ public class RefactoringMain {
  * 제어 플래그 삭제
  * - break, return 등의 제어문으로 교체
  * - 먼저 이상한 변수명 변경 (단계적으로 리팩토링 진행)
+ * 널 객체 사용하기
+ * - 널 체크 코드가 너무 많은 경우, 아무것도 안하는 객체를 만들어 사용함으로써 널 확인 코드를 감소
+ * - 널이든 아니든 간에 겉에서 보기에는 돌아가는 것처럼 보이게 코딩, 내부에서 널 처리
+ * - 널 객체 생성 (NullLabel), NullXXX extends XXX
+ * - isNull 메소드 추가
  */
 class Test {
     public void order(int command) { // <-- Command command (Enumeration Recommended)
