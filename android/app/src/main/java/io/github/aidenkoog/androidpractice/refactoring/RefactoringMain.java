@@ -28,11 +28,16 @@ public class RefactoringMain {
  * - 의미 파악 어려움, 수정 어려움, 상수로 치환하여 리팩토링 권장
  */
 class Test {
-    public void order(int command) {
+    public void order(int command) { // <-- Command command (Enumeration Recommended)
         if (command == 0) { // <-- Magic Number, public static final COMMAND_COMPLETED = 0;
 
         } else if (command == 1) {
             // ...
         }
+    }
+
+    // 상수 하드코딩 자체를 막기 위해서는 아래 Enum 타입을 사용해야 함.
+    enum Command {
+        CMD_1, CMD_2, CMD_3
     }
 }
