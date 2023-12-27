@@ -26,6 +26,9 @@ public class RefactoringMain {
 /*
  * 매직 넘버를 상수로 바꾸기
  * - 의미 파악 어려움, 수정 어려움, 상수로 치환하여 리팩토링 권장
+ * 제어 플래그 삭제
+ * - break, return 등의 제어문으로 교체
+ * - 먼저 이상한 변수명 변경 (단계적으로 리팩토링 진행)
  */
 class Test {
     public void order(int command) { // <-- Command command (Enumeration Recommended)
