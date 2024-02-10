@@ -1,3 +1,7 @@
+## Notice
+
+- This repository will no longer be maintained as of February 10th.
+
 ### Awesome Programming Practice
 
 - Repository where I upload practice code I study.
