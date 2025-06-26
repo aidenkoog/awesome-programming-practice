@@ -19,11 +19,3 @@
 
 - 2023/05/10: Added list and animation test code of Flutter.
 - 2023/11/19: Added android practice code
-
-#### Link
-
-If you are interested in information about me or other activities, please access the link below.
-
-| Plugin      | LINK                           |
-| ----------- | ------------------------------ |
-| Github page | [https://aidenkoog.github.io/] |
